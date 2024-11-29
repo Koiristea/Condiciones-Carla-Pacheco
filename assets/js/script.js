@@ -1,5 +1,5 @@
 /*Primer problema*/
-const img = document.querySelector("#miImagen");
+const img = document.getElementById("miImagen");
 
 img.addEventListener('click', () => {
     img.classList.toggle('border-red');

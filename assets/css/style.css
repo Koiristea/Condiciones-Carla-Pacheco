@@ -9,7 +9,8 @@
 .pepe {
     display: flex;
     justify-content: center;
-    margin: 3vw 0 15vw 0;
+    margin: 5vw 0 10vw 0;
+    height: 14vw;
 }
 
 .border-red {
@@ -27,13 +28,17 @@
     margin: 2vw;
     & .sticker {
         display: flex;
-        width: 16vw;
+        width: 20vw;
         height: auto;
     }
     & .input {
         display: flex;
-        margin: 1vw auto;
+        margin: 4vh auto 1vh auto;
         border: 2px solid rgb(205, 58, 112);
+        width: 4vw;
+        height: 3vw;
+        font-size: 4vh;
+        padding: 0 2vh 0 3vh;
     }
 }
 
@@ -44,13 +49,16 @@
     justify-content: center;
     margin: auto;
     & button {
-        margin: auto;
-        width: 15vh;
-        height: 4vh;
-        font-size: 1.7vh;
+        background-color: rgb(205, 58, 112);
+        color: white;
+        margin: 1vw auto;
+        width: 19vh;
+        height: 8vh;
+        font-size: 3vh;
     }
     & p {
-        margin: 2vh auto;
+        margin: 2vw auto;
+        font-size: 4vh;
     }
 }
 
@@ -60,10 +68,26 @@
 .password {
     display: flex;
     justify-content: center;
-    margin: 3vh;
+    margin: 6vw;
+    & select {
+        font-size: 5vh;
+        display: flex;
+        margin: 2vh;
+    }
+    & button {
+        background-color: rgb(205, 58, 112);
+        color: white;
+        width: 15vh;
+        height: 6vh;
+        font-size: 2.5vh;
+        margin: auto 2vw;
+    }
 }
 
 #verification {
     display: flex;
     justify-content: center;
+    & p {
+        font-size: 7vh;
+    }
 }
