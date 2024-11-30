@@ -1,18 +1,18 @@
-/*Primer problema*/
-const img = document.getElementById("miImagen");
+/*First problem*/
+const img = document.getElementById("my-image");
 
 img.addEventListener('click', () => {
-    img.classList.toggle('border-red');
+    img.classList.toggle('border-click');
 });
 
 
-/*Segundo problema*/
+/*second problem*/
 
-const inputs = document.querySelectorAll('.input');
-const calcularBtn = document.getElementById('calcular');
-const resultado = document.getElementById('resultado');
+const inputs = document.querySelectorAll('.input-sticker');
+const calculateBtn = document.getElementById('calculate');
+const result = document.getElementById('result');
 
-const calcularTotalStickers = () => {
+const calculateTotalStickers = () => {
     let totalStickers = 0;
 
     inputs.forEach(input => {
@@ -20,15 +20,15 @@ const calcularTotalStickers = () => {
     });
 
     if (totalStickers <= 10) {
-        resultado.textContent = `Llevas ${totalStickers} stickers`;
+        result.textContent = `Llevas ${totalStickers} stickers`;
     } else {
-        resultado.textContent = 'Llevas demasiados stickers';
+        result.textContent = 'Llevas demasiados stickers';
     }
 };
 
-calcularBtn.addEventListener('click', calcularTotalStickers);
+calculateBtn.addEventListener('click', calculateTotalStickers);
 
-/*Tercer problema*/
+/*third problem*/
 
 const options = document.querySelectorAll('.select-option');
 options.forEach(select => {
@@ -41,10 +41,10 @@ options.forEach(select => {
 });
 
 const selects = document.querySelectorAll('.select-option');
-const ingresarBtn = document.getElementById('ingresar');
+const getIntoBtn = document.getElementById('get-into');
 const verification = document.getElementById('verification');
 
-const verificarPassword = () => {
+const verifyPassword = () => {
     let password = '';
     selects.forEach(select => {
         password += select.value;
@@ -59,4 +59,4 @@ const verificarPassword = () => {
     }
 };
 
-ingresarBtn.addEventListener('click', verificarPassword);
+getIntoBtn.addEventListener('click', verifyPassword);

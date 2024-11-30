@@ -4,34 +4,34 @@
     border: 0;
 }
 
-/*Primer problema*/
+/*First problem*/
 
 .pepe {
     display: flex;
     justify-content: center;
-    margin: 5vw 0 10vw 0;
-    height: 14vw;
+    margin: 5vw auto 10vw auto;
+    height: 20vw;
 }
 
-.border-red {
+.border-click {
     border: 2px solid red;
 }
 
-/*Segundo problema*/
+/*second problem*/
 
-.venta {
+.sale {
     display: flex;
     justify-content: center;
 }
 
-.container {
+.item {
     margin: 2vw;
     & .sticker {
         display: flex;
         width: 20vw;
         height: auto;
     }
-    & .input {
+    & input {
         display: flex;
         margin: 4vh auto 1vh auto;
         border: 2px solid rgb(205, 58, 112);
@@ -43,7 +43,7 @@
     }
 }
 
-.calculo {
+.calculation {
     display: flex;
     width: 100%;
     flex-direction: column;
